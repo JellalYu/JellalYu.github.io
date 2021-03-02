@@ -17,13 +17,13 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"jellalyu.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"jellalyu.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="在 Streaming data 的處理上，因為數據是連續不斷的，我們不可能等到所有數據都到了才開始處理，我們可以每來一個消息就處理一次，像是一些聚合 (aggregation) 的處理。 舉個例子：在過去的 1 分鐘內有多少用戶點擊了我們的網頁。在這種情況下，我們必須定義一個窗格 (window)，用來收集最近一分鐘內的數據，並對這個窗格內的數據進行計算。 窗格可以是時間驅動的 (Time W">
 <meta property="og:type" content="article">
 <meta property="og:title" content="The Windowing Approach of Streaming Data">
-<meta property="og:url" content="https://jellalyu.com/2020/10/05/text2.0/index.html">
+<meta property="og:url" content="https://jellalyu.github.io/2020/10/05/text2.0/index.html">
 <meta property="og:site_name" content="Jayger">
 <meta property="og:description" content="在 Streaming data 的處理上，因為數據是連續不斷的，我們不可能等到所有數據都到了才開始處理，我們可以每來一個消息就處理一次，像是一些聚合 (aggregation) 的處理。 舉個例子：在過去的 1 分鐘內有多少用戶點擊了我們的網頁。在這種情況下，我們必須定義一個窗格 (window)，用來收集最近一分鐘內的數據，並對這個窗格內的數據進行計算。 窗格可以是時間驅動的 (Time W">
 <meta property="og:locale" content="zh_TW">
@@ -37,7 +37,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.imgur.com/PiOgRcI.png">
 
-<link rel="canonical" href="https://jellalyu.com/2020/10/05/text2.0/">
+<link rel="canonical" href="https://jellalyu.github.io/2020/10/05/text2.0/">
 
 
 <script id="page-configurations">
@@ -170,7 +170,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-tw">
-    <link itemprop="mainEntityOfPage" href="https://jellalyu.com/2020/10/05/text2.0/">
+    <link itemprop="mainEntityOfPage" href="https://jellalyu.github.io/2020/10/05/text2.0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
