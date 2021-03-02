@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Jayger</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2021-02-28T11:47:06.881Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Jayger</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Kubeflow Pipeline - 不只是 ML Pipeline</title>
+    <link href="http://example.com/2020/11/11/post-kubeflow/"/>
+    <id>http://example.com/2020/11/11/post-kubeflow/</id>
+    <published>2020-11-11T05:44:24.000Z</published>
+    <updated>2021-02-28T11:47:06.881Z</updated>
+    
+    <content type="html"><![CDATA[<p>這篇我原先打在 notion，由於圖片沒辦法直接匯出，請到下面連結見此文章：<br><a href="https://www.notion.so/Kubeflow-Pipeline-ML-Pipeline-310315e8e5cd4105b938daf4f41c5ce3">https://www.notion.so/Kubeflow-Pipeline-ML-Pipeline-310315e8e5cd4105b938daf4f41c5ce3</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;這篇我原先打在 notion，由於圖片沒辦法直接匯出，請到下面連結見此文章：&lt;br&gt;&lt;a href=&quot;https://www.notion.so/Kubeflow-Pipeline-ML-Pipeline-310315e8e5cd4105b938daf4f41c5ce3&quot;&gt;</summary>
+      
+    
+    
+    
+    <category term="ML" scheme="http://example.com/categories/ML/"/>
+    
+    <category term="AWS" scheme="http://example.com/categories/ML/AWS/"/>
+    
+    
+    <category term="DL" scheme="http://example.com/tags/DL/"/>
+    
+    <category term="k8s" scheme="http://example.com/tags/k8s/"/>
+    
+    <category term="Kubeflow" scheme="http://example.com/tags/Kubeflow/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Should we consider Multicollinearity in ML/DL?</title>
+    <link href="http://example.com/2020/11/11/post/"/>
+    <id>http://example.com/2020/11/11/post/</id>
+    <published>2020-11-11T05:44:24.000Z</published>
+    <updated>2020-11-13T08:51:01.753Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i.imgur.com/PW8ycIO.png"></p><ul><li><p>What is Multicollinearity?</p><p>  在進行線性回歸分析時，容易出現自變數（解釋變數）之間彼此相關的現象，我們稱這種現象為多重共線性。</p><p>  適度的多重共線性不成問題，但當出現嚴重共線性問題時，會導致分析結果不穩定，出現回歸係數的符號與實際情況完全相反的情況。本應該顯著的自變量不顯著，本不顯著的自變量卻呈現出顯著性，這種情況下就需要消除多重共線性的影響。</p></li><li><p>The Problem with having Multicollinearity</p></li><li><p>What causes Multicollinearity?</p></li><li><p>Detecting Multicollinearity with VIF</p></li><li><p>Fixing Multicollinearity</p></li><li><p>Should we consider Multicollinearity in ML/DL?</p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/PW8ycIO.png&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;What is Multicollinearity?&lt;/p&gt;
+&lt;p&gt;  在進行線性回歸分析時，容易出現自變數（解釋變數）之間彼此相關的現象，我們稱這種現象</summary>
+      
+    
+    
+    
+    <category term="ML" scheme="http://example.com/categories/ML/"/>
+    
+    
+    <category term="DL" scheme="http://example.com/tags/DL/"/>
+    
+    <category term="Multicollinearity" scheme="http://example.com/tags/Multicollinearity/"/>
+    
+    <category term="Feature Engineering" scheme="http://example.com/tags/Feature-Engineering/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The Windowing Approach of Streaming Data</title>
+    <link href="http://example.com/2020/10/05/text2.0/"/>
+    <id>http://example.com/2020/10/05/text2.0/</id>
+    <published>2020-10-05T09:27:31.000Z</published>
+    <updated>2020-11-09T19:11:11.681Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i.imgur.com/PiOgRcI.png"></p><p>在 Streaming data 的處理上，因為數據是連續不斷的，我們不可能等到所有數據都到了才開始處理，我們可以每來一個消息就處理一次，像是一些聚合 (aggregation) 的處理。</p><p>舉個例子：在過去的 1 分鐘內有多少用戶點擊了我們的網頁。在這種情況下，我們必須定義一個窗格 (window)，用來收集最近一分鐘內的數據，並對這個窗格內的數據進行計算。</p><p>窗格可以是時間驅動的 (Time Window，例如：每30秒鐘一個窗格)，也可以是數據驅動的 (Count Window，例如：每一百個事件一個窗格)。</p><p>這些窗格分類普遍可以分成：Tumbling Window (無重疊)，Sliding Window (有重疊)，和Session Window (有間隙)。</p><p>下面這張表格定義 Data windowing: Chopping data along temporal boundaries into finite blocks for processing. (將數據沿時間邊界切割成有限塊以進行處理，英文很難懂，也說得很籠統)</p><p>下面用例子來解釋幾種 windowing 方法，假設不同時間點有不同數量的 Stream data。</p><p>Fixed (Tumbling): 用固定的時間邊界 (temporal boundaries)，把這些 Stream data 切成好幾塊 Block。如上圖藍色線部分。<br>Sliding: 滑動時間範圍，Block 和事件有固定的 length 和 period，且每個時間範圍都至少會有一個事件，如果 period (temporal boundaries) &lt; length (window size)，window 就會重疊 (overlap)，如上圖上面那一條綠線；如果 period = length 就會和 Fixed 一樣。<br>Session: 會將相近時間的 stream data 分組，並把沒有任何數據的時間範圍篩掉，如上圖橘色線部分。</p><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul><li>Introduction to Stream Analytics windowing functions</li><li>Flink 原理与实现：Window 机制</li><li>流式计算的windowing</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/PiOgRcI.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;在 Streaming data 的處理上，因為數據是連續不斷的，我們不可能等到所有數據都到了才開始處理，我們可以每來一個消息就處理一次，像是一些聚合 (aggregati</summary>
+      
+    
+    
+    
+    <category term="Data Engineering" scheme="http://example.com/categories/Data-Engineering/"/>
+    
+    
+    <category term="Big Data" scheme="http://example.com/tags/Big-Data/"/>
+    
+    <category term="Time series" scheme="http://example.com/tags/Time-series/"/>
+    
+    <category term="Streaming Data" scheme="http://example.com/tags/Streaming-Data/"/>
+    
+  </entry>
+  
+</feed>
