@@ -3,11 +3,11 @@
   <title>Jayger</title>
   
   <subtitle>Data Scientist Note</subtitle>
-  <link href="http://www.jellalyublog.com/atom.xml" rel="self"/>
+  <link href="https://jellalyu.github.io/atom.xml" rel="self"/>
   
-  <link href="http://www.jellalyublog.com/"/>
+  <link href="https://jellalyu.github.io/"/>
   <updated>2021-02-28T11:47:06.881Z</updated>
-  <id>http://www.jellalyublog.com/</id>
+  <id>https://jellalyu.github.io/</id>
   
   <author>
     <name>Jayger</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Kubeflow Pipeline - 不只是 ML Pipeline</title>
-    <link href="http://www.jellalyublog.com/2020/11/11/post-kubeflow/"/>
-    <id>http://www.jellalyublog.com/2020/11/11/post-kubeflow/</id>
+    <link href="https://jellalyu.github.io/2020/11/11/post-kubeflow/"/>
+    <id>https://jellalyu.github.io/2020/11/11/post-kubeflow/</id>
     <published>2020-11-11T05:44:24.000Z</published>
     <updated>2021-02-28T11:47:06.881Z</updated>
     
@@ -33,23 +33,23 @@
     
     
     
-    <category term="ML" scheme="http://www.jellalyublog.com/categories/ML/"/>
+    <category term="ML" scheme="https://jellalyu.github.io/categories/ML/"/>
     
-    <category term="AWS" scheme="http://www.jellalyublog.com/categories/ML/AWS/"/>
+    <category term="AWS" scheme="https://jellalyu.github.io/categories/ML/AWS/"/>
     
     
-    <category term="DL" scheme="http://www.jellalyublog.com/tags/DL/"/>
+    <category term="DL" scheme="https://jellalyu.github.io/tags/DL/"/>
     
-    <category term="k8s" scheme="http://www.jellalyublog.com/tags/k8s/"/>
+    <category term="k8s" scheme="https://jellalyu.github.io/tags/k8s/"/>
     
-    <category term="Kubeflow" scheme="http://www.jellalyublog.com/tags/Kubeflow/"/>
+    <category term="Kubeflow" scheme="https://jellalyu.github.io/tags/Kubeflow/"/>
     
   </entry>
   
   <entry>
     <title>Should we consider Multicollinearity in ML/DL?</title>
-    <link href="http://www.jellalyublog.com/2020/11/11/post/"/>
-    <id>http://www.jellalyublog.com/2020/11/11/post/</id>
+    <link href="https://jellalyu.github.io/2020/11/11/post/"/>
+    <id>https://jellalyu.github.io/2020/11/11/post/</id>
     <published>2020-11-11T05:44:24.000Z</published>
     <updated>2020-11-13T08:51:01.753Z</updated>
     
@@ -66,21 +66,21 @@
     
     
     
-    <category term="ML" scheme="http://www.jellalyublog.com/categories/ML/"/>
+    <category term="ML" scheme="https://jellalyu.github.io/categories/ML/"/>
     
     
-    <category term="DL" scheme="http://www.jellalyublog.com/tags/DL/"/>
+    <category term="DL" scheme="https://jellalyu.github.io/tags/DL/"/>
     
-    <category term="Multicollinearity" scheme="http://www.jellalyublog.com/tags/Multicollinearity/"/>
+    <category term="Multicollinearity" scheme="https://jellalyu.github.io/tags/Multicollinearity/"/>
     
-    <category term="Feature Engineering" scheme="http://www.jellalyublog.com/tags/Feature-Engineering/"/>
+    <category term="Feature Engineering" scheme="https://jellalyu.github.io/tags/Feature-Engineering/"/>
     
   </entry>
   
   <entry>
     <title>The Windowing Approach of Streaming Data</title>
-    <link href="http://www.jellalyublog.com/2020/10/05/text2.0/"/>
-    <id>http://www.jellalyublog.com/2020/10/05/text2.0/</id>
+    <link href="https://jellalyu.github.io/2020/10/05/text2.0/"/>
+    <id>https://jellalyu.github.io/2020/10/05/text2.0/</id>
     <published>2020-10-05T09:27:31.000Z</published>
     <updated>2020-11-09T19:11:11.681Z</updated>
     
@@ -95,14 +95,14 @@
     
     
     
-    <category term="Data Engineering" scheme="http://www.jellalyublog.com/categories/Data-Engineering/"/>
+    <category term="Data Engineering" scheme="https://jellalyu.github.io/categories/Data-Engineering/"/>
     
     
-    <category term="Big Data" scheme="http://www.jellalyublog.com/tags/Big-Data/"/>
+    <category term="Big Data" scheme="https://jellalyu.github.io/tags/Big-Data/"/>
     
-    <category term="Time series" scheme="http://www.jellalyublog.com/tags/Time-series/"/>
+    <category term="Time series" scheme="https://jellalyu.github.io/tags/Time-series/"/>
     
-    <category term="Streaming Data" scheme="http://www.jellalyublog.com/tags/Streaming-Data/"/>
+    <category term="Streaming Data" scheme="https://jellalyu.github.io/tags/Streaming-Data/"/>
     
   </entry>
   
