@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Jayger</title>
+  <title>Jay&#39;s Data Journey</title>
   
-  <subtitle>Data Scientist Note</subtitle>
+  <subtitle>Statistic / Cloud / Data Engineering / Coffee</subtitle>
   <link href="https://jellalyu.github.io/atom.xml" rel="self"/>
   
   <link href="https://jellalyu.github.io/"/>
@@ -10,7 +10,7 @@
   <id>https://jellalyu.github.io/</id>
   
   <author>
-    <name>Jayger</name>
+    <name>JellalYu</name>
     
   </author>
   
