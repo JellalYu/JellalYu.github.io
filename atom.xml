@@ -51,9 +51,9 @@
     <link href="https://jellalyu.github.io/2020/11/11/post/"/>
     <id>https://jellalyu.github.io/2020/11/11/post/</id>
     <published>2020-11-11T05:44:24.000Z</published>
-    <updated>2021-03-02T18:52:47.412Z</updated>
+    <updated>2021-03-11T09:14:36.443Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://i.imgur.com/PW8ycIO.png"></p><ul><li><p>What is Multicollinearity?</p><p>  在進行線性回歸分析時，容易出現自變數（解釋變數）之間彼此相關的現象，我們稱這種現象為多重共線性。</p><p>  適度的多重共線性不成問題，但當出現嚴重共線性問題時，會導致分析結果不穩定，出現回歸係數的符號與實際情況完全相反的情況。本應該顯著的自變量不顯著，本不顯著的自變量卻呈現出顯著性，這種情況下就需要消除多重共線性的影響。</p></li><li><p>The Problem with having Multicollinearity</p></li><li><p>What causes Multicollinearity?</p></li><li><p>Detecting Multicollinearity with VIF</p></li><li><p>Fixing Multicollinearity</p></li><li><p>Should we consider Multicollinearity in ML/DL?</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://i.imgur.com/PW8ycIO.png"></p><ul><li><p>What is Multicollinearity?</p><p>  在進行線性回歸分析時，容易出現自變數（解釋變數）之間彼此相關的現象，我們稱這種現象為多重共線性。</p><p>  適度的多重共線性不成問題，但當出現嚴重共線性問題時，會導致分析結果不穩定，出現迴歸係數的符號與實際情況完全相反的情況。原本應該顯著的自變量變成不顯著，不顯著的自變量卻呈現出顯著性，這種情況下就需要消除多重共線性的影響。</p></li><li><p>Detecting Multicollinearity with VIF<br>  在建立統計模型時，我們通常可以用變異數膨脹因子 (Variance Inflation Factors, VIF) 去檢定是否存在 Multicollinearity 現象，如果這個值大於 10 就表示這個變數有共線性問題，應該要剔除。</p></li><li><p>Fixing Multicollinearity<br>  處理 Multicollinearity 有很多種方法，例如 Regression 可以加上 Penalty 參數，去懲罰出不重要的變數，藉此篩選出重要的變數，Lasso 或是 Ridge 方法都可以。除此之外，也可以考慮其他變數篩選方式，例如 Spike-and-Slab Regression，我先前試過這種變數篩選方式是可以很好解決這類問題。詳細介紹可以參考：<a href="https://en.wikipedia.org/wiki/Spike-and-slab_regression">https://en.wikipedia.org/wiki/Spike-and-slab_regression</a></p></li><li><p>Should we consider Multicollinearity in ML/DL?</p><p>  Desision Tree 本質上不受多重共線性的影響。如果有 2 個 99％ 相關的 factor，在決定分枝時決策樹只會選擇其中之一。而其他模型（例如 logistic regression）會同時考慮這兩個變數，那就很不妙。而 Boosted Tree 使用單獨的決策樹，所以也不會受到多重共線性的影響。</p></li></ul>]]></content>
     
     
       
