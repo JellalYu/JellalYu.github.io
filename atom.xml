@@ -6,7 +6,7 @@
   <link href="https://jellalyu.github.io/atom.xml" rel="self"/>
   
   <link href="https://jellalyu.github.io/"/>
-  <updated>2021-03-02T18:52:47.410Z</updated>
+  <updated>2021-03-11T09:45:05.839Z</updated>
   <id>https://jellalyu.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Predictive Maintenance</title>
+    <link href="https://jellalyu.github.io/2021/03/11/Predictive-Maintenance/"/>
+    <id>https://jellalyu.github.io/2021/03/11/Predictive-Maintenance/</id>
+    <published>2021-03-11T09:42:14.000Z</published>
+    <updated>2021-03-11T09:45:05.839Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>維護方式簡介</strong></p><p>預測性維護用一句話貫穿就是「把搶修變成維護」。</p><p>常見的維護種類有反應性維護（Reactive Maintenance, RM），預防性維護（ Preventive Maintenance, PM）與預測性維護（ Predictive Maintenance, PdM）。</p><p>第一種 RM 是損壞時才修復，這種根本稱不上是維護了，而且當損壞發生的時候成本最高，例如機器停止時的生產時間成本。第二種 PM 就是不管設備是不是有問題，都例行性保養維護，這種的成本主要就是維修成本，錢不能花在刀口上。而最後一種預測性維護則可以將維護與損壞成本的期望值最小化，只在有潛在損壞可能的時候進行維護。成本如下圖：</p><p><img src="https://i.imgur.com/fGnMkie.png"></p><p>PdM 帶來的好處：</p><ul><li>減少設備維護時間</li><li>最大限度地減少因維護而浪費的生產時間</li><li>最大限度地減少備件和用品的成本</li></ul><p><strong>常見的 ML 預測方法與數據</strong></p><p>做預測性維護有很多種方法，例如：</p><ul><li>預測剩餘使用壽命（Regression models to predict <strong>remaining useful lifetime</strong>）</li><li>預測一定區間下的機器「狀態類別」 (Classification models to predict failure within a given time window)</li></ul><p>第一種方法要求在生產端有一定的設備損壞數據，才能知道還能存活多久，這意味著企業要先「繳學費」才能有這樣的經驗學習，因此如果機台本身有多段的狀態數據，在不正常時就先去搶修，對於企業而言會是比較好的選擇。</p><p>而數據收集建議透過 IoT 即時且持續蒐集數據，分析的數據可以從例如振動分析（vibration analysis），油分析（oil analysi），熱成像（thermal imaging）和設備觀察（equipment observation）這些來源獲得。</p><p>案例的部分可見這一篇：<a href="http://ilms.ouk.edu.tw/d9534524/doc/43787">http://ilms.ouk.edu.tw/d9534524/doc/43787</a></p><p><strong>Reference</strong></p><p><a href="https://towardsdatascience.com/how-to-implement-machine-learning-for-predictive-maintenance-4633cdbe4860">https://towardsdatascience.com/how-to-implement-machine-learning-for-predictive-maintenance-4633cdbe4860</a></p><p><a href="https://ivctechnologies.com/2017/08/29/reactive-preventive-predictive-maintenance/">https://ivctechnologies.com/2017/08/29/reactive-preventive-predictive-maintenance/</a></p><p><strong>NASA 資料集</strong></p><p><a href="https://www.kaggle.com/c/prehackathonsup/data">https://www.kaggle.com/c/prehackathonsup/data</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;維護方式簡介&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;預測性維護用一句話貫穿就是「把搶修變成維護」。&lt;/p&gt;
+&lt;p&gt;常見的維護種類有反應性維護（Reactive Maintenance, RM），預防性維護（ Preventive Maintenance, PM）與</summary>
+      
+    
+    
+    
+    
+    <category term="PdM" scheme="https://jellalyu.github.io/tags/PdM/"/>
+    
+  </entry>
   
   <entry>
     <title>Kubeflow Pipeline - 不只是 ML Pipeline</title>
