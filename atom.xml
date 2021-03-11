@@ -51,17 +51,17 @@
     <link href="https://jellalyu.github.io/2020/11/11/post/"/>
     <id>https://jellalyu.github.io/2020/11/11/post/</id>
     <published>2020-11-11T05:44:24.000Z</published>
-    <updated>2021-03-11T09:14:36.443Z</updated>
+    <updated>2021-03-11T09:18:38.075Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://i.imgur.com/PW8ycIO.png"></p><ul><li><p>What is Multicollinearity?</p><p>  在進行線性回歸分析時，容易出現自變數（解釋變數）之間彼此相關的現象，我們稱這種現象為多重共線性。</p><p>  適度的多重共線性不成問題，但當出現嚴重共線性問題時，會導致分析結果不穩定，出現迴歸係數的符號與實際情況完全相反的情況。原本應該顯著的自變量變成不顯著，不顯著的自變量卻呈現出顯著性，這種情況下就需要消除多重共線性的影響。</p></li><li><p>Detecting Multicollinearity with VIF<br>  在建立統計模型時，我們通常可以用變異數膨脹因子 (Variance Inflation Factors, VIF) 去檢定是否存在 Multicollinearity 現象，如果這個值大於 10 就表示這個變數有共線性問題，應該要剔除。</p></li><li><p>Fixing Multicollinearity<br>  處理 Multicollinearity 有很多種方法，例如 Regression 可以加上 Penalty 參數，去懲罰出不重要的變數，藉此篩選出重要的變數，Lasso 或是 Ridge 方法都可以。除此之外，也可以考慮其他變數篩選方式，例如 Spike-and-Slab Regression，我先前試過這種變數篩選方式是可以很好解決這類問題。詳細介紹可以參考：<a href="https://en.wikipedia.org/wiki/Spike-and-slab_regression">https://en.wikipedia.org/wiki/Spike-and-slab_regression</a></p></li><li><p>Should we consider Multicollinearity in ML/DL?</p><p>  Desision Tree 本質上不受多重共線性的影響。如果有 2 個 99％ 相關的 factor，在決定分枝時決策樹只會選擇其中之一。而其他模型（例如 logistic regression）會同時考慮這兩個變數，那就很不妙。而 Boosted Tree 使用單獨的決策樹，所以也不會受到多重共線性的影響。</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://i.imgur.com/PW8ycIO.png"></p><ul><li><p><strong>What is Multicollinearity?</strong></p><p>  在進行 Linear Regression Analysis 時，容易出現自變數（解釋變數）之間彼此相關的現象，我們稱這種現象為多重共線性。</p><p>  適度的多重共線性不成問題，但當出現嚴重共線性問題時，會導致分析結果不穩定，出現迴歸係數的符號與實際情況完全相反的情況。原本應該顯著的自變量變成不顯著，不顯著的自變量卻呈現出顯著性，這種情況下就需要消除多重共線性的影響。</p></li><li><p><strong>Detecting Multicollinearity with VIF</strong><br>  在建立統計模型時，我們通常可以用變異數膨脹因子 (Variance Inflation Factors, VIF) 去檢定是否存在 Multicollinearity 現象，如果這個值大於 10 就表示這個變數有共線性問題，應該要剔除。</p></li><li><p><strong>Fixing Multicollinearity</strong><br>  處理 Multicollinearity 有很多種方法，例如 Regression 可以加上 Penalty 參數，去懲罰出不重要的變數，藉此篩選出重要的變數，Lasso 或是 Ridge 方法都可以。除此之外，也可以考慮其他變數篩選方式，例如 Spike-and-Slab Regression，我先前試過這種變數篩選方式是可以很好解決這類問題。詳細介紹可以參考：<a href="https://en.wikipedia.org/wiki/Spike-and-slab_regression">https://en.wikipedia.org/wiki/Spike-and-slab_regression</a></p></li><li><p><strong>Should we consider Multicollinearity in ML/DL?</strong></p><p>  Desision Tree 本質上不受多重共線性的影響。如果有 2 個 99％ 相關的 factor，在決定分枝時決策樹只會選擇其中之一。而其他模型（例如 logistic regression）會同時考慮這兩個變數，那就很不妙。而 Boosted Tree 使用單獨的決策樹，所以也不會受到多重共線性的影響。</p></li></ul>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/PW8ycIO.png&quot;&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;What is Multicollinearity?&lt;/p&gt;
-&lt;p&gt;  在進行線性回歸分析時，容易出現自變數（解釋變數）之間彼此相關的現象，我們稱這種現象</summary>
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;What is Multicollinearity?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;  在進行 Linear Regression An</summary>
       
     
     
@@ -82,9 +82,9 @@
     <link href="https://jellalyu.github.io/2020/10/05/text2.0/"/>
     <id>https://jellalyu.github.io/2020/10/05/text2.0/</id>
     <published>2020-10-05T09:27:31.000Z</published>
-    <updated>2021-03-02T18:52:47.414Z</updated>
+    <updated>2021-03-11T09:20:37.031Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://i.imgur.com/PiOgRcI.png"></p><p>在 Streaming data 的處理上，因為數據是連續不斷的，我們不可能等到所有數據都到了才開始處理，我們可以每來一個消息就處理一次，像是一些聚合 (aggregation) 的處理。</p><p>舉個例子：在過去的 1 分鐘內有多少用戶點擊了我們的網頁。在這種情況下，我們必須定義一個窗格 (window)，用來收集最近一分鐘內的數據，並對這個窗格內的數據進行計算。</p><p>窗格可以是時間驅動的 (Time Window，例如：每30秒鐘一個窗格)，也可以是數據驅動的 (Count Window，例如：每一百個事件一個窗格)。</p><p>這些窗格分類普遍可以分成：Tumbling Window (無重疊)，Sliding Window (有重疊)，和Session Window (有間隙)。</p><p>下面這張表格定義 Data windowing: Chopping data along temporal boundaries into finite blocks for processing. (將數據沿時間邊界切割成有限塊以進行處理，英文很難懂，也說得很籠統)</p><p>下面用例子來解釋幾種 windowing 方法，假設不同時間點有不同數量的 Stream data。</p><p>Fixed (Tumbling): 用固定的時間邊界 (temporal boundaries)，把這些 Stream data 切成好幾塊 Block。如上圖藍色線部分。<br>Sliding: 滑動時間範圍，Block 和事件有固定的 length 和 period，且每個時間範圍都至少會有一個事件，如果 period (temporal boundaries) &lt; length (window size)，window 就會重疊 (overlap)，如上圖上面那一條綠線；如果 period = length 就會和 Fixed 一樣。<br>Session: 會將相近時間的 stream data 分組，並把沒有任何數據的時間範圍篩掉，如上圖橘色線部分。</p><h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul><li>Introduction to Stream Analytics windowing functions</li><li>Flink 原理与实现：Window 机制</li><li>流式计算的windowing</li></ul>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://i.imgur.com/PiOgRcI.png"></p><p>在 Streaming data 的處理上，因為數據是連續不斷的，我們不可能等到所有數據都到了才開始處理，我們可以每來一個消息就處理一次，像是一些聚合 (aggregation) 的處理。舉個例子：在過去的 1 分鐘內有多少用戶點擊了我們的網頁。在這種情況下，我們必須定義一個窗格 (window)，用來收集最近一分鐘內的數據，並對這個窗格內的數據進行計算。</p><p>窗格可以是時間驅動的 (Time Window，例如：每30秒鐘一個窗格)，也可以是數據驅動的 (Count Window，例如：每一百個事件一個窗格)。這些窗格分類普遍可以分成：Tumbling Window (無重疊)，Sliding Window (有重疊)，和Session Window (有間隙)。</p><p>下面這張表格定義 Data windowing: Chopping data along temporal boundaries into finite blocks for processing. (將數據沿時間邊界切割成有限塊以進行處理，英文很難懂，也說得很籠統)</p><p>下面用例子來解釋幾種 windowing 方法，假設不同時間點有不同數量的 Stream data。</p><p>Fixed (Tumbling): 用固定的時間邊界 (temporal boundaries)，把這些 Stream data 切成好幾塊 Block。如上圖藍色線部分。<br>Sliding: 滑動時間範圍，Block 和事件有固定的 length 和 period，且每個時間範圍都至少會有一個事件，如果 period (temporal boundaries) &lt; length (window size)，window 就會重疊 (overlap)，如上圖上面那一條綠線；如果 period = length 就會和 Fixed 一樣。<br>Session: 會將相近時間的 stream data 分組，並把沒有任何數據的時間範圍篩掉，如上圖橘色線部分。</p>]]></content>
     
     
       
